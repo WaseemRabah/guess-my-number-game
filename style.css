@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+body {
+  font-family: "Press Start 2P", system-ui;
+  background-color: rgb(225, 20, 221);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.score {
+  display: flex;
+  justify-content: space-around;
+}
+
+.wrapper {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.secret-number {
+  margin-top: 1.5em;
+  color: aliceblue;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: #ffff00;
+  width: 7em;
+  height: 5em;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wrapper {
+  margin-top: 3em;
+  height: 7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message {
+  margin: 3em 0 1.5em 0;
+}
+
+.input-field {
+  font-family: "Press Start 2P", system-ui;
+  margin: 0;
+  width: 7em;
+  height: 5em;
+  font-size: 35px;
+  text-align: center;
+}
+
+button {
+  font-family: "Press Start 2P", system-ui;
+  margin-top: 7em;
+  width: 200px;
+  height: 80px;
+  background-color: black;
+  color: #ffff00;
+}
+
+i::before {
+  margin: 0 10px 0 10px;
+  font-size: 200px;
+  color: transparent;
+  -webkit-text-stroke: 0.8px #ffffff;
+  animation: glowing 1.2s reverse infinite ease-in-out;
+}
+
+i:nth-child(1)::before {
+  animation-delay: 0;
+}
+i:nth-child(2)::before {
+  animation-delay: 0.14s;
+}
+i:nth-child(3)::before {
+  animation-delay: 0.21s;
+}
+i:nth-child(4)::before {
+  animation-delay: 0.28s;
+}
+
+.wrapper-left i::before {
+  margin: 0 10px 0 10px;
+  font-size: 200px;
+  color: transparent;
+  -webkit-text-stroke: 0.8px #ffffff;
+  animation: glowing-left 1.2s reverse infinite ease-in-out;
+}
+
+@keyframes glowing {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    filter: drop-shadow(0 0 0 #ffffff) drop-shadow(0 0 1px #ffffff)
+      drop-shadow(0 0 2px #ffff00) drop-shadow(0 0 3px #ffff00)
+      drop-shadow(0 0 4px #ffff00) drop-shadow(0 0 5px #ffff00);
+  }
+}
+
+@keyframes glowing-left {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    filter: drop-shadow(0 0 0 #ffffff) drop-shadow(0 0 1px #ffffff)
+      drop-shadow(0 0 2px #ffff00) drop-shadow(0 0 3px #ffff00)
+      drop-shadow(0 0 4px #ffff00) drop-shadow(0 0 5px #ffff00);
+  }
+}
+
+i:nth-child(1)::before {
+  animation-delay: 0.28s;
+}
+i:nth-child(2)::before {
+  animation-delay: 0.21s;
+}
+i:nth-child(3)::before {
+  animation-delay: 0.14s;
+}
+i:nth-child(4)::before {
+  animation-delay: 0;
+}

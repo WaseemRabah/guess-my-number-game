@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"
+    />
+    <title>Guess My Number Game !</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Guess My Number 😜</h1>
+    </header>
+    <main>
+      <div class="score">
+        <div class="heigh-score">
+          highScore : <span class="highScore"></span>
+        </div>
+        <div class="your-score">
+          yourScore : <span class="yourScore">20</span>
+        </div>
+      </div>
+      <div class="container">
+        <div class="secret-number">?</div>
+        <div class="message">Enter Your Number 🤔</div>
+        <div class="wrapper">
+          <div class="wrapper-right">
+            <i class="zmdi zmdi-chevron-right zmdi-hc-3x"></i>
+            <i class="zmdi zmdi-chevron-right zmdi-hc-3x"></i>
+            <i class="zmdi zmdi-chevron-right zmdi-hc-3x"></i>
+            <i class="zmdi zmdi-chevron-right zmdi-hc-3x"></i>
+          </div>
+          <input class="input-field" type="number" />
+          <div class="wrapper-left">
+            <i class="zmdi zmdi-chevron-left zmdi-hc-3x"></i>
+            <i class="zmdi zmdi-chevron-left zmdi-hc-3x"></i>
+            <i class="zmdi zmdi-chevron-left zmdi-hc-3x"></i>
+            <i class="zmdi zmdi-chevron-left zmdi-hc-3x"></i>
+          </div>
+        </div>
+        <div>
+          <button class="again">Play Again 🔄️</button>
+          <button class="check">Check !</button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
