@@ -14,6 +14,7 @@ const updateScoreAndDisplayMessage = function (message, isGameOver = false) {
   if (!isGameOver) {
     score--;
     document.querySelector(".yourScore").textContent = score;
+    document.querySelector(".message").style.color = 'red';
   } else {
     score = 0;
     document.querySelector(".yourScore").textContent = score;
