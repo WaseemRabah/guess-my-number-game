@@ -81,31 +81,17 @@ i::before {
   font-size: 200px;
   color: transparent;
   -webkit-text-stroke: 0.8px #ffffff;
-  animation: glowing 1.2s reverse infinite ease-in-out;
 }
 
-i:nth-child(1)::before {
-  animation-delay: 0;
-}
-i:nth-child(2)::before {
-  animation-delay: 0.14s;
-}
-i:nth-child(3)::before {
-  animation-delay: 0.21s;
-}
-i:nth-child(4)::before {
-  animation-delay: 0.28s;
+.wrapper-right i::before {
+  animation: glowing-right 1.2s reverse infinite ease-in-out;
 }
 
 .wrapper-left i::before {
-  margin: 0 10px 0 10px;
-  font-size: 200px;
-  color: transparent;
-  -webkit-text-stroke: 0.8px #ffffff;
   animation: glowing-left 1.2s reverse infinite ease-in-out;
 }
 
-@keyframes glowing {
+@keyframes glowing-right {
   0% {
     opacity: 0;
   }
@@ -127,17 +113,4 @@ i:nth-child(4)::before {
       drop-shadow(0 0 2px #ffff00) drop-shadow(0 0 3px #ffff00)
       drop-shadow(0 0 4px #ffff00) drop-shadow(0 0 5px #ffff00);
   }
-}
-
-i:nth-child(1)::before {
-  animation-delay: 0.28s;
-}
-i:nth-child(2)::before {
-  animation-delay: 0.21s;
-}
-i:nth-child(3)::before {
-  animation-delay: 0.14s;
-}
-i:nth-child(4)::before {
-  animation-delay: 0;
 }
